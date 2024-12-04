@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Button, Switch, Divider } from 'react-native-paper';
 
-const Settings = ({}) => {
+const Settings = ({isDarkTheme, setIsDarkTheme}) => {
     const [notificationsEnabled, setNotificationsEnabled] = useState(false);
-    const [theme, setTheme] = useState('Dark');
+    const theme = isDarkTheme ? 'Dark' : 'Light';
 
     return (
         <View style={styles.container}>
@@ -14,8 +14,9 @@ const Settings = ({}) => {
             <View style={styles.settingItem}>
                 <Text>Theme: {theme}</Text>
                 <Button
-                    mode="contained-tonal"
-                    onPress={() => setTheme((prev) => (prev === 'Dark' ? 'Light' : 'Dark'))}
+                    mode="contained"
+                    textColor={isDarkTheme ? '#ffffff' : '#000000'}
+                    onPress={() => setIsDarkTheme((prev) => (!prev))}
                 >
                     Toggle Theme
                 </Button>
@@ -58,11 +59,12 @@ const styles = StyleSheet.create({
     },
     divider: {
         marginVertical: 10,
+        
     },
     settingItem: {
         marginBottom: 20,
         justifyContent: 'space-between',
-    },
+    }
 });
 
 export default Settings;
