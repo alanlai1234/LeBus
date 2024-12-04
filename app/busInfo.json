@@ -1,0 +1,1272 @@
+{
+  "stops": {
+    "ID10060": {
+      "routeId": "43440",
+      "stopId": "10060",
+      "position": "4",
+      "name": "Stadium West Lot",
+      "latitude": 40.514556942,
+      "longitude": -74.466148593,
+      "id": "10060",
+      "userId": "1268",
+      "radius": 40,
+      "routeName": "H Route",
+      "routeShortname": "H",
+      "routeGroupId": 0
+    },
+    "ID10034": {
+      "routeId": "43973",
+      "stopId": "10034",
+      "position": "5",
+      "name": "Hill Center (NB)",
+      "latitude": 40.521919278,
+      "longitude": -74.463297682,
+      "id": "10034",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "B Route",
+      "routeShortname": "B",
+      "routeGroupId": 0
+    },
+    "ID10039": {
+      "routeId": "43711",
+      "stopId": "10039",
+      "position": "5",
+      "name": "Allison Road Classrooms",
+      "latitude": 40.52356,
+      "longitude": -74.465190671,
+      "id": "10039",
+      "userId": "1268",
+      "radius": 90,
+      "routeName": "REXB Route",
+      "routeShortname": "REXB",
+      "routeGroupId": 0
+    },
+    "ID21050": {
+      "routeId": "43711",
+      "stopId": "21050",
+      "position": "6",
+      "name": "Hill Center (SB)",
+      "latitude": 40.521925185,
+      "longitude": -74.463308044,
+      "id": "21050",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "REXB Route",
+      "routeShortname": "REXB",
+      "routeGroupId": 0
+    },
+    "ID10035": {
+      "routeId": "43440",
+      "stopId": "10035",
+      "position": "5",
+      "name": "College Avenue Student Center",
+      "latitude": 40.503664735,
+      "longitude": -74.452402128,
+      "id": "10035",
+      "userId": "1268",
+      "radius": 110,
+      "routeName": "H Route",
+      "routeShortname": "H",
+      "routeGroupId": 0
+    },
+    "ID27767": {
+      "routeId": "45773",
+      "stopId": "27767",
+      "position": "14",
+      "name": "The Yard",
+      "latitude": 40.49957,
+      "longitude": -74.44824,
+      "id": "27767",
+      "userId": "1268",
+      "radius": 90,
+      "routeName": "F Route",
+      "routeShortname": "F",
+      "routeGroupId": 0
+    },
+    "ID10038": {
+      "routeId": "45773",
+      "stopId": "10038",
+      "position": "12",
+      "name": "Student Activities Center (NB)",
+      "latitude": 40.503910197,
+      "longitude": -74.448819271,
+      "id": "10038",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "F Route",
+      "routeShortname": "F",
+      "routeGroupId": 0
+    },
+    "ID10041": {
+      "routeId": "43973",
+      "stopId": "10041",
+      "position": "6",
+      "name": "Science Building",
+      "latitude": 40.523938,
+      "longitude": -74.464221,
+      "id": "10041",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "B Route",
+      "routeShortname": "B",
+      "routeGroupId": 0
+    },
+    "ID10052": {
+      "routeId": "43973",
+      "stopId": "10052",
+      "position": "9",
+      "name": "Busch Student Center",
+      "latitude": 40.523795537,
+      "longitude": -74.458255043,
+      "id": "10052",
+      "userId": "1268",
+      "radius": 83,
+      "routeName": "B Route",
+      "routeShortname": "B",
+      "routeGroupId": 0
+    },
+    "ID10071": {
+      "routeId": "43973",
+      "stopId": "10071",
+      "position": "10",
+      "name": "Livingston Plaza",
+      "latitude": 40.525106,
+      "longitude": -74.438584,
+      "id": "10071",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "B Route",
+      "routeShortname": "B",
+      "routeGroupId": 0
+    },
+    "ID10029": {
+      "routeId": "43973",
+      "stopId": "10029",
+      "position": "1",
+      "name": "Livingston Student Center",
+      "latitude": 40.524,
+      "longitude": -74.43663,
+      "id": "10029",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "B Route",
+      "routeShortname": "B",
+      "routeGroupId": 0
+    },
+    "ID10065": {
+      "routeId": "43973",
+      "stopId": "10065",
+      "position": "2",
+      "name": "Quads",
+      "latitude": 40.519863,
+      "longitude": -74.433567,
+      "id": "10065",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "B Route",
+      "routeShortname": "B",
+      "routeGroupId": 0
+    },
+    "ID12913": {
+      "routeId": "37199",
+      "stopId": "12913",
+      "position": "12",
+      "name": "Student Activities Center (SB)",
+      "latitude": 40.504248745,
+      "longitude": -74.449741951,
+      "id": "12913",
+      "userId": "1268",
+      "radius": 40,
+      "routeName": "All Campus",
+      "routeShortname": "allcamp",
+      "routeGroupId": 0
+    },
+    "ID10037": {
+      "routeId": "45773",
+      "stopId": "10037",
+      "position": "4",
+      "name": "Red Oak Lane",
+      "latitude": 40.48298694,
+      "longitude": -74.437534636,
+      "id": "10037",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "F Route",
+      "routeShortname": "F",
+      "routeGroupId": 0
+    },
+    "ID10059": {
+      "routeId": "45773",
+      "stopId": "10059",
+      "position": "5",
+      "name": "Lipman Hall",
+      "latitude": 40.481294,
+      "longitude": -74.436266,
+      "id": "10059",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "F Route",
+      "routeShortname": "F",
+      "routeGroupId": 0
+    },
+    "ID10042": {
+      "routeId": "43431",
+      "stopId": "10042",
+      "position": "7",
+      "name": "Biel Road",
+      "latitude": 40.48,
+      "longitude": -74.432522,
+      "id": "10042",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "EE Route",
+      "routeShortname": "EE",
+      "routeGroupId": 0
+    },
+    "ID10026": {
+      "routeId": "43431",
+      "stopId": "10026",
+      "position": "8",
+      "name": "Henderson",
+      "latitude": 40.48095,
+      "longitude": -74.42872,
+      "id": "10026",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "EE Route",
+      "routeShortname": "EE",
+      "routeGroupId": 0
+    },
+    "ID10061": {
+      "routeId": "43431",
+      "stopId": "10061",
+      "position": "9",
+      "name": "Gibbons",
+      "latitude": 40.48523,
+      "longitude": -74.43194,
+      "id": "10061",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "EE Route",
+      "routeShortname": "EE",
+      "routeGroupId": 0
+    },
+    "ID10036": {
+      "routeId": "45773",
+      "stopId": "10036",
+      "position": "11",
+      "name": "College Hall",
+      "latitude": 40.485509,
+      "longitude": -74.437198,
+      "id": "10036",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "F Route",
+      "routeShortname": "F",
+      "routeGroupId": 0
+    },
+    "ID62662": {
+      "routeId": "43431",
+      "stopId": "62662",
+      "position": "11",
+      "name": "SoCam Apts (NB)",
+      "latitude": 40.492293,
+      "longitude": -74.44324,
+      "id": "62662",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "EE Route",
+      "routeShortname": "EE",
+      "routeGroupId": 0
+    },
+    "ID10075": {
+      "routeId": "43431",
+      "stopId": "10075",
+      "position": "4",
+      "name": "SoCam Apts (SB)",
+      "latitude": 40.491856,
+      "longitude": -74.443093,
+      "id": "10075",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "EE Route",
+      "routeShortname": "EE",
+      "routeGroupId": 0
+    },
+    "ID10096": {
+      "routeId": "43397",
+      "stopId": "10096",
+      "position": "3",
+      "name": "Busch-Livingston Health Center",
+      "latitude": 40.523479,
+      "longitude": -74.442508,
+      "id": "10096",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "B-He Route",
+      "routeShortname": "B-HE",
+      "routeGroupId": 0
+    },
+    "ID10089": {
+      "routeId": "43440",
+      "stopId": "10089",
+      "position": "9",
+      "name": "Werblin Recreation Center",
+      "latitude": 40.518637,
+      "longitude": -74.459854,
+      "id": "10089",
+      "userId": "1268",
+      "radius": 40,
+      "routeName": "H Route",
+      "routeShortname": "H",
+      "routeGroupId": 0
+    },
+    "ID153546": {
+      "routeId": "43991",
+      "stopId": "153546",
+      "position": "1",
+      "name": "Jersey Mike's Arena",
+      "latitude": 40.524793279,
+      "longitude": -74.441031138,
+      "id": "153546",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "Football Service Transition",
+      "routeShortname": null,
+      "routeGroupId": 0
+    },
+    "ID123068": {
+      "routeId": "43990",
+      "stopId": "123068",
+      "position": "2",
+      "name": "Lot 53A",
+      "latitude": 40.520326222,
+      "longitude": -74.463097321,
+      "id": "123068",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "Football Before Kickoff",
+      "routeShortname": null,
+      "routeGroupId": 0
+    },
+    "ID153552": {
+      "routeId": "43991",
+      "stopId": "153552",
+      "position": "3",
+      "name": "The Bubble",
+      "latitude": 40.516396819,
+      "longitude": -74.465689823,
+      "id": "153552",
+      "userId": "1268",
+      "radius": 50,
+      "routeName": "Football Service Transition",
+      "routeShortname": null,
+      "routeGroupId": 0
+    }
+  },
+  "routes": {
+    "4056": [
+      "Penn Station Local",
+      "#009900",
+      0,
+      [
+        "1",
+        "10098",
+        0
+      ],
+      [
+        "2",
+        "10053",
+        0
+      ],
+      [
+        "3",
+        "10066",
+        0
+      ],
+      [
+        "4",
+        "10057",
+        0
+      ],
+      [
+        "5",
+        "10079",
+        0
+      ],
+      [
+        "6",
+        "10054",
+        0
+      ],
+      [
+        "7",
+        "10033",
+        0
+      ],
+      [
+        "8",
+        "10090",
+        0
+      ],
+      [
+        "9",
+        "10027",
+        0
+      ]
+    ],
+    "4063": [
+      "Campus Connect",
+      "#be2625",
+      0,
+      [
+        "1",
+        "10056",
+        0
+      ],
+      [
+        "2",
+        "10090",
+        0
+      ],
+      [
+        "3",
+        "10033",
+        0
+      ],
+      [
+        "4",
+        "10055",
+        0
+      ],
+      [
+        "5",
+        "10053",
+        0
+      ],
+      [
+        "6",
+        "10093",
+        0
+      ],
+      [
+        "7",
+        "10058",
+        0
+      ],
+      [
+        "8",
+        "10074",
+        0
+      ],
+      [
+        "9",
+        "10076",
+        0
+      ],
+      [
+        "10",
+        "10050",
+        0
+      ],
+      [
+        "11",
+        "10047",
+        0
+      ]
+    ],
+    "4067": [
+      "C Route",
+      "#00FFFF",
+      0,
+      [
+        "1",
+        "10060",
+        0
+      ],
+      [
+        "3",
+        "10034",
+        0
+      ],
+      [
+        "4",
+        "10039",
+        0
+      ],
+      [
+        "5",
+        "21050",
+        0
+      ]
+    ],
+    "4088": [
+      "Campus Connect Express",
+      "#7f00ff",
+      0,
+      [
+        "1",
+        "10056",
+        0
+      ],
+      [
+        "2",
+        "10053",
+        0
+      ],
+      [
+        "3",
+        "10058",
+        0
+      ],
+      [
+        "4",
+        "10074",
+        0
+      ],
+      [
+        "5",
+        "10056",
+        1
+      ]
+    ],
+    "4098": [
+      "Penn Station Express",
+      "#ff5333",
+      1,
+      [
+        "1",
+        "10098",
+        0
+      ],
+      [
+        "2",
+        "10053",
+        0
+      ],
+      [
+        "3",
+        "10066",
+        0
+      ]
+    ],
+    "26435": [
+      "Weekend 1",
+      "#008080",
+      1,
+      [
+        "1",
+        "10035",
+        0
+      ],
+      [
+        "2",
+        "27767",
+        0
+      ],
+      [
+        "3",
+        "10038",
+        0
+      ],
+      [
+        "5",
+        "10034",
+        0
+      ],
+      [
+        "6",
+        "10041",
+        0
+      ],
+      [
+        "7",
+        "10052",
+        0
+      ],
+      [
+        "8",
+        "10071",
+        0
+      ],
+      [
+        "9",
+        "10029",
+        0
+      ],
+      [
+        "10",
+        "10065",
+        0
+      ],
+      [
+        "11",
+        "12913",
+        0
+      ],
+      [
+        "12",
+        "10037",
+        0
+      ],
+      [
+        "13",
+        "10059",
+        0
+      ],
+      [
+        "14",
+        "10042",
+        0
+      ],
+      [
+        "15",
+        "10026",
+        0
+      ],
+      [
+        "16",
+        "10061",
+        0
+      ],
+      [
+        "17",
+        "10036",
+        0
+      ],
+      [
+        "18",
+        "62662",
+        0
+      ],
+      [
+        "20",
+        "10038",
+        0
+      ]
+    ],
+    "26436": [
+      "Weekend 2",
+      "#6A5ACD",
+      1,
+      [
+        "1",
+        "10035",
+        0
+      ],
+      [
+        "2",
+        "27767",
+        0
+      ],
+      [
+        "3",
+        "10075",
+        0
+      ],
+      [
+        "4",
+        "10037",
+        0
+      ],
+      [
+        "5",
+        "10059",
+        0
+      ],
+      [
+        "6",
+        "10042",
+        0
+      ],
+      [
+        "7",
+        "10026",
+        0
+      ],
+      [
+        "8",
+        "10061",
+        0
+      ],
+      [
+        "9",
+        "10036",
+        0
+      ],
+      [
+        "10",
+        "10038",
+        0
+      ],
+      [
+        "11",
+        "10071",
+        0
+      ],
+      [
+        "12",
+        "10029",
+        0
+      ],
+      [
+        "13",
+        "10065",
+        0
+      ],
+      [
+        "14",
+        "10052",
+        0
+      ],
+      [
+        "15",
+        "10039",
+        0
+      ],
+      [
+        "16",
+        "21050",
+        0
+      ]
+    ],
+    "37199": [
+      "All Campus",
+      "#000000",
+      0,
+      [
+        "1",
+        "10035",
+        0
+      ],
+      [
+        "3",
+        "27767",
+        0
+      ],
+      [
+        "4",
+        "10038",
+        0
+      ],
+      [
+        "6",
+        "10034",
+        0
+      ],
+      [
+        "7",
+        "10041",
+        0
+      ],
+      [
+        "8",
+        "10052",
+        0
+      ],
+      [
+        "9",
+        "10071",
+        0
+      ],
+      [
+        "10",
+        "10029",
+        0
+      ],
+      [
+        "11",
+        "10065",
+        0
+      ],
+      [
+        "12",
+        "12913",
+        0
+      ],
+      [
+        "13",
+        "10037",
+        0
+      ],
+      [
+        "14",
+        "10059",
+        0
+      ],
+      [
+        "15",
+        "10042",
+        0
+      ],
+      [
+        "16",
+        "10026",
+        0
+      ],
+      [
+        "17",
+        "10061",
+        0
+      ],
+      [
+        "18",
+        "10036",
+        0
+      ],
+      [
+        "20",
+        "62662",
+        0
+      ],
+      [
+        "21",
+        "10038",
+        0
+      ]
+    ],
+    "41231": [
+      "Camden",
+      "#756bb1",
+      0,
+      [
+        "1",
+        "22103",
+        0
+      ],
+      [
+        "2",
+        "22104",
+        0
+      ],
+      [
+        "3",
+        "22105",
+        0
+      ],
+      [
+        "4",
+        "22106",
+        0
+      ],
+      [
+        "5",
+        "23404",
+        0
+      ],
+      [
+        "6",
+        "22107",
+        0
+      ]
+    ],
+    "43397": [
+      "B-He Route",
+      "#DAA520",
+      0,
+      [
+        "1",
+        "10029",
+        0
+      ],
+      [
+        "2",
+        "10065",
+        0
+      ],
+      [
+        "3",
+        "10096",
+        0
+      ],
+      [
+        "4",
+        "10052",
+        0
+      ],
+      [
+        "5",
+        "10039",
+        0
+      ],
+      [
+        "6",
+        "10034",
+        0
+      ],
+      [
+        "8",
+        "10071",
+        0
+      ]
+    ],
+    "43398": [
+      "LX Route",
+      "#cc99ff",
+      0,
+      [
+        "1",
+        "10029",
+        0
+      ],
+      [
+        "2",
+        "10065",
+        0
+      ],
+      [
+        "4",
+        "10035",
+        0
+      ],
+      [
+        "6",
+        "27767",
+        0
+      ],
+      [
+        "9",
+        "10038",
+        0
+      ],
+      [
+        "10",
+        "10071",
+        0
+      ]
+    ],
+    "43430": [
+      "A Route",
+      "#ff00ff",
+      0,
+      [
+        "1",
+        "10035",
+        0
+      ],
+      [
+        "2",
+        "27767",
+        0
+      ],
+      [
+        "4",
+        "10038",
+        0
+      ],
+      [
+        "6",
+        "10060",
+        0
+      ],
+      [
+        "8",
+        "10034",
+        0
+      ],
+      [
+        "9",
+        "10041",
+        0
+      ],
+      [
+        "12",
+        "10052",
+        0
+      ],
+      [
+        "14",
+        "10089",
+        0
+      ]
+    ],
+    "43431": [
+      "EE Route",
+      "#FF8000",
+      0,
+      [
+        "1",
+        "10035",
+        0
+      ],
+      [
+        "3",
+        "27767",
+        0
+      ],
+      [
+        "4",
+        "10075",
+        0
+      ],
+      [
+        "5",
+        "10037",
+        0
+      ],
+      [
+        "6",
+        "10059",
+        0
+      ],
+      [
+        "7",
+        "10042",
+        0
+      ],
+      [
+        "8",
+        "10026",
+        0
+      ],
+      [
+        "9",
+        "10061",
+        0
+      ],
+      [
+        "10",
+        "10036",
+        0
+      ],
+      [
+        "11",
+        "62662",
+        0
+      ],
+      [
+        "12",
+        "10038",
+        0
+      ]
+    ],
+    "43440": [
+      "H Route",
+      "#0000ff",
+      0,
+      [
+        "1",
+        "10052",
+        0
+      ],
+      [
+        "2",
+        "10039",
+        0
+      ],
+      [
+        "3",
+        "21050",
+        0
+      ],
+      [
+        "4",
+        "10060",
+        0
+      ],
+      [
+        "5",
+        "10035",
+        0
+      ],
+      [
+        "7",
+        "27767",
+        0
+      ],
+      [
+        "8",
+        "10038",
+        0
+      ],
+      [
+        "9",
+        "10089",
+        0
+      ]
+    ],
+    "43441": [
+      "REXL Route",
+      "#66B2FF",
+      0,
+      [
+        "1",
+        "10037",
+        0
+      ],
+      [
+        "2",
+        "10059",
+        0
+      ],
+      [
+        "3",
+        "10036",
+        0
+      ],
+      [
+        "4",
+        "10071",
+        0
+      ],
+      [
+        "5",
+        "10029",
+        0
+      ]
+    ],
+    "43711": [
+      "REXB Route",
+      "#660033",
+      0,
+      [
+        "1",
+        "10037",
+        0
+      ],
+      [
+        "2",
+        "10059",
+        0
+      ],
+      [
+        "3",
+        "10036",
+        0
+      ],
+      [
+        "4",
+        "10034",
+        0
+      ],
+      [
+        "5",
+        "10039",
+        0
+      ],
+      [
+        "6",
+        "21050",
+        0
+      ]
+    ],
+    "43973": [
+      "B Route",
+      "#FFFF00",
+      0,
+      [
+        "1",
+        "10029",
+        0
+      ],
+      [
+        "2",
+        "10065",
+        0
+      ],
+      [
+        "5",
+        "10034",
+        0
+      ],
+      [
+        "6",
+        "10041",
+        0
+      ],
+      [
+        "9",
+        "10052",
+        0
+      ],
+      [
+        "10",
+        "10071",
+        0
+      ]
+    ],
+    "43990": [
+      "Football Before Kickoff",
+      "#d62728",
+      0,
+      [
+        "1",
+        "153546",
+        0
+      ],
+      [
+        "2",
+        "123068",
+        0
+      ]
+    ],
+    "43991": [
+      "Football Service Transition",
+      "#d62728",
+      0,
+      [
+        "1",
+        "153546",
+        0
+      ],
+      [
+        "3",
+        "153552",
+        0
+      ]
+    ],
+    "45773": [
+      "F Route",
+      "#ff0000",
+      1,
+      [
+        "4",
+        "10037",
+        0
+      ],
+      [
+        "5",
+        "10059",
+        0
+      ],
+      [
+        "11",
+        "10036",
+        0
+      ],
+      [
+        "12",
+        "10038",
+        0
+      ],
+      [
+        "14",
+        "27767",
+        0
+      ]
+    ]
+  },
+  "routeShortNames": {
+    "4056": "Penn",
+    "4063": "Connect",
+    "4067": "C",
+    "4088": "CCExp",
+    "4098": "PennExpr",
+    "26435": "WKND1",
+    "26436": "WKND2",
+    "37199": "allcamp",
+    "41231": "Cam",
+    "43397": "B-HE",
+    "43398": "LX",
+    "43430": "A",
+    "43431": "EE",
+    "43440": "H",
+    "43441": "REXL",
+    "43711": "REXB",
+    "43973": "B",
+    "43990": null,
+    "43991": null,
+    "45773": "F"
+  }
+}

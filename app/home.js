@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {View, Keyboard, StyleSheet, TouchableWithoutFeedback, ScrollView} from 'react-native';
 import Animated, { useSharedValue, withTiming, useAnimatedStyle, runOnJS} from 'react-native-reanimated';
-import { TextInput, TouchableRipple, List, Divider, Text, FAB, SegmentedButtons} from 'react-native-paper';
-import Entypo from '@expo/vector-icons/Entypo';
+import { TextInput, TouchableRipple, List, Divider, Text, FAB, SegmentedButtons, Icon } from 'react-native-paper';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import ActionSheet, {ScrollView as SheetScrollView} from "react-native-actions-sheet";
+import tracking from './passiogo.js';
+import data from './busInfo.json';
 
 const style = StyleSheet.create({
 	container:{
@@ -44,17 +46,40 @@ const style = StyleSheet.create({
 	},
 })
 
-const options = ["Quads", "Livi Student Center", "Livi Plaza", "Busch Student Center", "Allison Rd. Classroom", "Hill Center", "College Ave Student Center", "The Yard", "Student Activities Center"];
+// data initialize
+let stops = {};
+let options = [];
+for(const key in data.stops){
+	stops[data.stops[key].name] = data.stops[key].stopId;
+	options.push(data.stops[key].name);
+}
+let routesInStop = {};
+for(const stop in stops) routesInStop[stops[stop]] = [];
+for(const key in data.routes){
+	for(let i = 3;i < data.routes[key].length; ++i){
+		if(data.routes[key][i][1] in routesInStop)
+			routesInStop[data.routes[key][i][1]].push([key, data.routes[key][i][0]]);
+	}
+}
 
-const busColor = {
-	'EE': "#ff7b00",
-	'B-He': "#c47c4d",
-	'LX': "#bc62fc"
-};
-
-
-const BusIncoming = () => {
+const BusIncoming = (props) => {
 	const actionSheetRef = useRef(null);
+	const track = new tracking();
+	const [buses, setBuses] = useState(() => []);
+	useEffect(() => {
+		const fetch = async() => {
+			let tmp = [];
+			if(props.searchStop in stops){
+				for(const route of routesInStop[stops[props.searchStop]]){
+					const ret = await track.getStop(stops[props.searchStop], route[0], route[1]);
+					for(const key in ret) tmp.push([data.routes[route[0]][0], ret[key][0].eta, data.routes[route[0]][1], ret[key][0].busName]);
+				}
+			}
+			setBuses(tmp);
+		}
+		fetch();
+	}, [props.searchStop])
+
 	const BusItem = (props) => {
 		return(
 			<>
@@ -63,20 +88,21 @@ const BusIncoming = () => {
 				<List.Item
 				title={props.line}
 				description={props.id}
-				left={props1 => <List.Icon {...props1} color={busColor[props.line]} icon="bus" />}
+				left={props1 => <List.Icon {...props1} color={props.color} icon="bus" />}
 				right={props1 => <Text {...props1}>{props.time}</Text>}
 				/>
 			</TouchableRipple>
 			</>
 		)
 	}
+
 	return (
 		<>
 		<View style={style.container}>
 			<ScrollView>
-				<BusItem line='EE' id='4632' time='1 minute'/>
-				<BusItem line='B-He' id='4632' time='2 minute'/>
-				<BusItem line='LX' id='4632' time='3 minute'/>
+				{buses.map((item) => {
+					if(item[1] !== "no vehicles") return <BusItem key={item[0]} line={item[0]} color={item[2]} time={item[1]} id={item[3]}/>
+				})}
 			</ScrollView>
 		</View>
 		<ActionSheet
@@ -87,7 +113,7 @@ const BusIncoming = () => {
 		>
 			<SheetScrollView>
 				{options.map((item) => {
-				return <Text key={item} style={style.dropdownItem}>{item}</Text>
+					return <Text key={item} style={style.dropdownItem}>{item}</Text>
 				})}
 			</SheetScrollView>
 		</ActionSheet>
@@ -118,9 +144,9 @@ const Dropdown = (props) => {
 	}
 	const destModeChoose = (value) => {
 		if(value==0){
-			props.setDestMode(0);
 			opacity.value = 0;
 			Keyboard.dismiss()
+			props.setDestMode(0);
 		}
 	}
 
@@ -139,9 +165,9 @@ const Dropdown = (props) => {
 				ref={props.inputref}
 			/>
 			<View style={{borderRadius: 25, overflow: 'hidden', marginTop: 5}}>
-				<TouchableRipple onPress={() => console.log('Pressed')} rippleColor="#636260"
+				<TouchableRipple onPress={() => props.setSearchStop(searchText)} rippleColor="#636260"
 				style={{flex: 1, justifyContent: 'center'}}>
-					<Entypo name="location-pin" size={30} color="#a99fb5" style={{marginLeft: 15, marginRight: 15}}/>
+					<MaterialCommunityIcons name="magnify" size={30} color="#a99fb5" style={{marginLeft: 15, marginRight: 15}}/>
 				</TouchableRipple>
 			</View>
 		</View>
@@ -180,11 +206,12 @@ const Dropdown = (props) => {
 export default function Home() {
 	const inputref = useRef(null);
 	const [inputOpen, setInputOpen] = useState(0);
+	const [searchStop, setSearchStop] = useState("");
 	return(
 		<TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>
 			<View style={style.container}>
-				<Dropdown destMode={inputOpen} setDestMode={setInputOpen} inputref={inputref}/>
-				<BusIncoming/>
+				<Dropdown destMode={inputOpen} setDestMode={setInputOpen} inputref={inputref} setSearchStop={setSearchStop}/>
+				<BusIncoming searchStop={searchStop}/>
 				<FAB
 					icon="plus"
 					style={style.fab}
