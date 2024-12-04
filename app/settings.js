@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Button, Switch, Divider } from 'react-native-paper';
 
+
 const Settings = ({isDarkTheme, setIsDarkTheme}) => {
     const [notificationsEnabled, setNotificationsEnabled] = useState(false);
     const theme = isDarkTheme ? 'Dark' : 'Light';

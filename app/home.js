@@ -83,7 +83,7 @@ const BusIncoming = (props) => {
 		return(
 			<>
 			<Divider />
-			<TouchableRipple onPress={() => actionSheetRef.current?.show()} rippleColor="#636260">
+			<TouchableRipple onPress={() => actionSheetRef.current?.show()} rippleColor={isDarkTheme ? "#636260" : 'rgba(0, 0, 0, .12)'}>
 				<List.Item
 				title={props.line}
 				description={props.id}
@@ -165,7 +165,7 @@ const Dropdown = (props) => {
 				ref={props.inputref}
 			/>
 			<View style={{borderRadius: 25, overflow: 'hidden', marginTop: 5}}>
-				<TouchableRipple onPress={() => props.setSearchStop(searchText)} rippleColor="#636260"
+				<TouchableRipple onPress={() => props.setSearchStop(searchText)} rippleColor={isDarkTheme ? "#636260" : 'rgba(0, 0, 0, .12)'}
 				style={{flex: 1, justifyContent: 'center'}}>
 					<MaterialCommunityIcons name="magnify" size={30} color="#a99fb5" style={{marginLeft: 15, marginRight: 15}}/>
 				</TouchableRipple>
@@ -186,21 +186,21 @@ const Dropdown = (props) => {
 				{
 					value: 0,
 					label: 'Cancel',
-					style: {backgroundColor: isDarkTheme ? '#1b1a47' : '#BF92E4', borderBottomLeftRadius: 0
-						
+					style: {backgroundColor: isDarkTheme ? '#311465' : '#BF92E4', borderBottomLeftRadius: 0
+
 					},
 					labelStyle: {color: isDarkTheme ? '#FFFFFF' : '#000000'}
 				},{
 					value: 1,
 					label: 'Set Destination',
-					style: {backgroundColor: isDarkTheme ? '#1b1a47' : '#BF92E4', borderBottomRightRadius: 0},
+					style: {backgroundColor: isDarkTheme ? '#311465' : '#BF92E4', borderBottomRightRadius: 0},
 					labelStyle: {color: isDarkTheme ? '#FFFFFF' : '#000000'}
 				},
 				]}
 				theme={{ roundness: 1.5 }}
 			/>)}
 			{filteredOptions.map((item) => {
-			return(<TouchableRipple key={item} rippleColor="rgba(0, 0, 0, .32)" onPress={() => onOptionPress(item)} >
+			return(<TouchableRipple key={item} rippleColor={isDarkTheme ? 'rgba(0, 0, 0, .32)' : 'rgba(0, 0, 0, .12)'} onPress={() => onOptionPress(item)} >
 						<Text style={style.dropdownItem}>{item}</Text>
 					</TouchableRipple>);
 			})}
