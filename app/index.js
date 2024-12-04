@@ -1,10 +1,9 @@
 import { PaperProvider, MD3DarkTheme, BottomNavigation, Text, TouchableRipple} from 'react-native-paper';
 import React, { useState } from 'react';
 import Home from './home.js'
+import Settings from './settings.js'
 
 const Schedule = () => <Text>Albums</Text>;
-
-const Settings = () => <Text>Recents</Text>;
 
 const NavBar = () => {
 	const [index, setIndex] = React.useState(0);
