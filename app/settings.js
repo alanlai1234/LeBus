@@ -15,8 +15,9 @@ const Settings = ({isDarkTheme, setIsDarkTheme}) => {
                 <Text>Theme: {theme}</Text>
                 <Button
                     mode="contained"
-                    textColor={isDarkTheme ? '#ffffff' : '#000000'}
+                    textColor={!isDarkTheme ? '#ffffff' : '#000000'}
                     onPress={() => setIsDarkTheme((prev) => (!prev))}
+                    contentStyle = {{backgroundColor: !isDarkTheme ? "#1A1920" : "#DCDBF2"}}
                 >
                     Toggle Theme
                 </Button>
