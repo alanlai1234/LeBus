@@ -11,7 +11,8 @@ import data from './busInfo.json';
 const style = StyleSheet.create({
 	container:{
 		flex: 1,
-		marginTop: 10
+		marginTop: 0,
+		paddingTop: 0
 	},
 	dropdownInput: {
 		marginLeft: 15,
@@ -98,7 +99,7 @@ const BusIncoming = (props) => {
 	return (
 		<>
 		<View style={style.container}>
-			<ScrollView>
+			<ScrollView style = {{flexGrow: 1}}>
 				{buses.map((item) => {
 					if(item[1] !== "no vehicles") return <BusItem key={item[0]} line={item[0]} color={item[2]} time={item[1]} id={item[3]}/>
 				})}
