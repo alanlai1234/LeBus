@@ -20,17 +20,15 @@ const style = StyleSheet.create({
 	dropdownList:{
 		position: 'absolute',
 		flexGrow: 0,
-		backgroundColor: "#494961",
 		borderRadius: 8,
 		maxHeight: 310,
 		marginTop: 60,
 		marginLeft: 15,
 		marginRight: 15,
 		width: '92%',
-		zIndex: 1
+		zIndex: 1,
 	},
 	dropdownItem:{
-		color: "white",
 		height: 45,
 		padding: 11,
 	},
@@ -66,6 +64,7 @@ const BusIncoming = (props) => {
 	const actionSheetRef = useRef(null);
 	const track = new tracking();
 	const [buses, setBuses] = useState(() => []);
+	const {isDarkTheme} = props;
 	useEffect(() => {
 		const fetch = async() => {
 			let tmp = [];
@@ -84,7 +83,7 @@ const BusIncoming = (props) => {
 		return(
 			<>
 			<Divider />
-			<TouchableRipple onPress={() => actionSheetRef.current?.show()} rippleColor="#636260">
+			<TouchableRipple onPress={() => actionSheetRef.current?.show()} rippleColor={isDarkTheme ? "#636260" : 'rgba(0, 0, 0, .12)'}>
 				<List.Item
 				title={props.line}
 				description={props.id}
@@ -113,7 +112,7 @@ const BusIncoming = (props) => {
 		>
 			<SheetScrollView>
 				{options.map((item) => {
-					return <Text key={item} style={style.dropdownItem}>{item}</Text>
+					return <Text key={item} style={style.dropdownItem} color={isDarkTheme ? "#FFFFFF": "#000000"}>{item}</Text>
 				})}
 			</SheetScrollView>
 		</ActionSheet>
@@ -126,6 +125,7 @@ const Dropdown = (props) => {
 	const [filteredOptions, setFilteredOptions] = useState(options);
 	const [open, setOpen] = useState(0);
 	const opacity = useSharedValue(0);
+	const {isDarkTheme} = props;
 	const filterOptions = (text) => {
 		setSearchText(text);
 		setFilteredOptions(options.filter((option) => option.toLowerCase().includes(text.toLowerCase())));
@@ -165,7 +165,7 @@ const Dropdown = (props) => {
 				ref={props.inputref}
 			/>
 			<View style={{borderRadius: 25, overflow: 'hidden', marginTop: 5}}>
-				<TouchableRipple onPress={() => props.setSearchStop(searchText)} rippleColor="#636260"
+				<TouchableRipple onPress={() => props.setSearchStop(searchText)} rippleColor={isDarkTheme ? "#636260" : 'rgba(0, 0, 0, .12)'}
 				style={{flex: 1, justifyContent: 'center'}}>
 					<MaterialCommunityIcons name="magnify" size={30} color="#a99fb5" style={{marginLeft: 15, marginRight: 15}}/>
 				</TouchableRipple>
@@ -173,6 +173,9 @@ const Dropdown = (props) => {
 		</View>
 		{!!open && (<Animated.ScrollView
 			style={[style.dropdownList, animatedStyles]}
+			borderColor= "000000"
+			borderWidth= {isDarkTheme ? 0 : 1}
+			backgroundColor= {isDarkTheme ? '#494961' : '#FFFFFF'}
 			keyboardShouldPersistTaps='handled'
 			stickyHeaderIndices={[props.destMode-1]}
 			alwaysBounceHorizontal={false}
@@ -183,17 +186,21 @@ const Dropdown = (props) => {
 				{
 					value: 0,
 					label: 'Cancel',
-					style: {backgroundColor: '#1b1a47', borderBottomLeftRadius: 0}
+					style: {backgroundColor: isDarkTheme ? '#311465' : '#BF92E4', borderBottomLeftRadius: 0
+
+					},
+					labelStyle: {color: isDarkTheme ? '#FFFFFF' : '#000000'}
 				},{
 					value: 1,
 					label: 'Set Destination',
-					style: {backgroundColor: '#1b1a47', borderBottomRightRadius: 0}
+					style: {backgroundColor: isDarkTheme ? '#311465' : '#BF92E4', borderBottomRightRadius: 0},
+					labelStyle: {color: isDarkTheme ? '#FFFFFF' : '#000000'}
 				},
 				]}
 				theme={{ roundness: 1.5 }}
 			/>)}
 			{filteredOptions.map((item) => {
-			return(<TouchableRipple key={item} rippleColor="rgba(0, 0, 0, .32)" onPress={() => onOptionPress(item)} >
+			return(<TouchableRipple key={item} rippleColor={isDarkTheme ? 'rgba(0, 0, 0, .32)' : 'rgba(0, 0, 0, .12)'} onPress={() => onOptionPress(item)} >
 						<Text style={style.dropdownItem}>{item}</Text>
 					</TouchableRipple>);
 			})}
@@ -203,15 +210,15 @@ const Dropdown = (props) => {
 	)
 }
 
-export default function Home() {
+function Home({isDarkTheme}) {
 	const inputref = useRef(null);
 	const [inputOpen, setInputOpen] = useState(0);
 	const [searchStop, setSearchStop] = useState("");
 	return(
 		<TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>
 			<View style={style.container}>
-				<Dropdown destMode={inputOpen} setDestMode={setInputOpen} inputref={inputref} setSearchStop={setSearchStop}/>
-				<BusIncoming searchStop={searchStop}/>
+				<Dropdown destMode={inputOpen} setDestMode={setInputOpen} inputref={inputref} setSearchStop={setSearchStop} isDarkTheme={isDarkTheme} />
+				<BusIncoming searchStop={searchStop} isDarkTheme={isDarkTheme}/>
 				<FAB
 					icon="plus"
 					style={style.fab}
@@ -221,3 +228,4 @@ export default function Home() {
 		</TouchableWithoutFeedback>
 	)
 };
+export default Home;
