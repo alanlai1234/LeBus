@@ -1,5 +1,13 @@
 class tracking{
 	constructor(){
+		this.busMap = {};
+		const tmp = async () => {
+			let data = await this.request("https://passiogo.com/mapGetData.php?getBuses=1");
+			for(const i in data.buses){
+				this.busMap[data.buses[i][0].busName] = data.buses[i][0].busId;
+			}
+		}
+		tmp();
 	}
 
 	async request(url){
@@ -27,13 +35,9 @@ class tracking{
 		}
 	}
 
-	async getBus(){
-		let data = await this.request("https://passiogo.com/mapGetData.php?getBuses=1");
-		let ret = [];
-		for(const i in data.buses){
-			ret.push(data.buses[i][0]);
-		}
-		return ret;
+	async getBus(busName){
+		let data = await this.request("https://passiogo.com/mapGetData.php?bus=1&busId="+this.busMap[busName]);
+		return [data.theBus.latitude, data.theBus.longitude, data.theBus.routeId];
 	}
 
 	async getStop(stopId, routeId, position){

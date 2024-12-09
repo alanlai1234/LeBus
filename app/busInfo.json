@@ -1,369 +1,161 @@
 {
   "stops": {
-    "ID10060": {
-      "routeId": "43440",
-      "stopId": "10060",
-      "position": "4",
-      "name": "Stadium West Lot",
-      "latitude": 40.514556942,
-      "longitude": -74.466148593,
-      "id": "10060",
-      "userId": "1268",
-      "radius": 40,
-      "routeName": "H Route",
-      "routeShortname": "H",
-      "routeGroupId": 0
-    },
-    "ID10034": {
-      "routeId": "43973",
-      "stopId": "10034",
-      "position": "5",
-      "name": "Hill Center (NB)",
-      "latitude": 40.521919278,
-      "longitude": -74.463297682,
-      "id": "10034",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "B Route",
-      "routeShortname": "B",
-      "routeGroupId": 0
-    },
-    "ID10039": {
-      "routeId": "43711",
-      "stopId": "10039",
-      "position": "5",
-      "name": "Allison Road Classrooms",
-      "latitude": 40.52356,
-      "longitude": -74.465190671,
-      "id": "10039",
-      "userId": "1268",
-      "radius": 90,
-      "routeName": "REXB Route",
-      "routeShortname": "REXB",
-      "routeGroupId": 0
-    },
-    "ID21050": {
-      "routeId": "43711",
-      "stopId": "21050",
-      "position": "6",
-      "name": "Hill Center (SB)",
-      "latitude": 40.521925185,
-      "longitude": -74.463308044,
-      "id": "21050",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "REXB Route",
-      "routeShortname": "REXB",
-      "routeGroupId": 0
-    },
-    "ID10035": {
-      "routeId": "43440",
-      "stopId": "10035",
-      "position": "5",
-      "name": "College Avenue Student Center",
-      "latitude": 40.503664735,
-      "longitude": -74.452402128,
-      "id": "10035",
-      "userId": "1268",
-      "radius": 110,
-      "routeName": "H Route",
-      "routeShortname": "H",
-      "routeGroupId": 0
-    },
-    "ID27767": {
-      "routeId": "45773",
-      "stopId": "27767",
-      "position": "14",
-      "name": "The Yard",
-      "latitude": 40.49957,
-      "longitude": -74.44824,
-      "id": "27767",
-      "userId": "1268",
-      "radius": 90,
-      "routeName": "F Route",
-      "routeShortname": "F",
-      "routeGroupId": 0
-    },
-    "ID10038": {
-      "routeId": "45773",
-      "stopId": "10038",
-      "position": "12",
-      "name": "Student Activities Center (NB)",
-      "latitude": 40.503910197,
-      "longitude": -74.448819271,
-      "id": "10038",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "F Route",
-      "routeShortname": "F",
-      "routeGroupId": 0
-    },
-    "ID10041": {
-      "routeId": "43973",
-      "stopId": "10041",
-      "position": "6",
-      "name": "Science Building",
-      "latitude": 40.523938,
-      "longitude": -74.464221,
-      "id": "10041",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "B Route",
-      "routeShortname": "B",
-      "routeGroupId": 0
-    },
-    "ID10052": {
-      "routeId": "43973",
-      "stopId": "10052",
-      "position": "9",
-      "name": "Busch Student Center",
-      "latitude": 40.523795537,
-      "longitude": -74.458255043,
-      "id": "10052",
-      "userId": "1268",
-      "radius": 83,
-      "routeName": "B Route",
-      "routeShortname": "B",
-      "routeGroupId": 0
-    },
-    "ID10071": {
-      "routeId": "43973",
-      "stopId": "10071",
-      "position": "10",
-      "name": "Livingston Plaza",
-      "latitude": 40.525106,
-      "longitude": -74.438584,
-      "id": "10071",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "B Route",
-      "routeShortname": "B",
-      "routeGroupId": 0
-    },
-    "ID10029": {
-      "routeId": "43973",
-      "stopId": "10029",
-      "position": "1",
-      "name": "Livingston Student Center",
-      "latitude": 40.524,
-      "longitude": -74.43663,
-      "id": "10029",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "B Route",
-      "routeShortname": "B",
-      "routeGroupId": 0
-    },
-    "ID10065": {
-      "routeId": "43973",
-      "stopId": "10065",
-      "position": "2",
-      "name": "Quads",
-      "latitude": 40.519863,
-      "longitude": -74.433567,
-      "id": "10065",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "B Route",
-      "routeShortname": "B",
-      "routeGroupId": 0
-    },
-    "ID12913": {
-      "routeId": "37199",
-      "stopId": "12913",
-      "position": "12",
-      "name": "Student Activities Center (SB)",
-      "latitude": 40.504248745,
-      "longitude": -74.449741951,
-      "id": "12913",
-      "userId": "1268",
-      "radius": 40,
-      "routeName": "All Campus",
-      "routeShortname": "allcamp",
-      "routeGroupId": 0
-    },
-    "ID10037": {
-      "routeId": "45773",
-      "stopId": "10037",
-      "position": "4",
-      "name": "Red Oak Lane",
-      "latitude": 40.48298694,
-      "longitude": -74.437534636,
-      "id": "10037",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "F Route",
-      "routeShortname": "F",
-      "routeGroupId": 0
-    },
-    "ID10059": {
-      "routeId": "45773",
-      "stopId": "10059",
-      "position": "5",
-      "name": "Lipman Hall",
-      "latitude": 40.481294,
-      "longitude": -74.436266,
-      "id": "10059",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "F Route",
-      "routeShortname": "F",
-      "routeGroupId": 0
-    },
-    "ID10042": {
-      "routeId": "43431",
-      "stopId": "10042",
-      "position": "7",
-      "name": "Biel Road",
-      "latitude": 40.48,
-      "longitude": -74.432522,
-      "id": "10042",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "EE Route",
-      "routeShortname": "EE",
-      "routeGroupId": 0
-    },
-    "ID10026": {
-      "routeId": "43431",
-      "stopId": "10026",
-      "position": "8",
-      "name": "Henderson",
-      "latitude": 40.48095,
-      "longitude": -74.42872,
-      "id": "10026",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "EE Route",
-      "routeShortname": "EE",
-      "routeGroupId": 0
-    },
-    "ID10061": {
-      "routeId": "43431",
-      "stopId": "10061",
-      "position": "9",
-      "name": "Gibbons",
-      "latitude": 40.48523,
-      "longitude": -74.43194,
-      "id": "10061",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "EE Route",
-      "routeShortname": "EE",
-      "routeGroupId": 0
-    },
-    "ID10036": {
-      "routeId": "45773",
-      "stopId": "10036",
-      "position": "11",
-      "name": "College Hall",
-      "latitude": 40.485509,
-      "longitude": -74.437198,
-      "id": "10036",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "F Route",
-      "routeShortname": "F",
-      "routeGroupId": 0
-    },
-    "ID62662": {
-      "routeId": "43431",
-      "stopId": "62662",
-      "position": "11",
-      "name": "SoCam Apts (NB)",
-      "latitude": 40.492293,
-      "longitude": -74.44324,
-      "id": "62662",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "EE Route",
-      "routeShortname": "EE",
-      "routeGroupId": 0
-    },
-    "ID10075": {
-      "routeId": "43431",
-      "stopId": "10075",
-      "position": "4",
-      "name": "SoCam Apts (SB)",
-      "latitude": 40.491856,
-      "longitude": -74.443093,
-      "id": "10075",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "EE Route",
-      "routeShortname": "EE",
-      "routeGroupId": 0
-    },
-    "ID10096": {
-      "routeId": "43397",
-      "stopId": "10096",
-      "position": "3",
-      "name": "Busch-Livingston Health Center",
-      "latitude": 40.523479,
-      "longitude": -74.442508,
-      "id": "10096",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "B-He Route",
-      "routeShortname": "B-HE",
-      "routeGroupId": 0
-    },
-    "ID10089": {
-      "routeId": "43440",
-      "stopId": "10089",
-      "position": "9",
-      "name": "Werblin Recreation Center",
-      "latitude": 40.518637,
-      "longitude": -74.459854,
-      "id": "10089",
-      "userId": "1268",
-      "radius": 40,
-      "routeName": "H Route",
-      "routeShortname": "H",
-      "routeGroupId": 0
-    },
-    "ID153546": {
-      "routeId": "43991",
-      "stopId": "153546",
-      "position": "1",
-      "name": "Jersey Mike's Arena",
-      "latitude": 40.524793279,
-      "longitude": -74.441031138,
-      "id": "153546",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "Football Service Transition",
-      "routeShortname": null,
-      "routeGroupId": 0
-    },
-    "ID123068": {
-      "routeId": "43990",
-      "stopId": "123068",
-      "position": "2",
-      "name": "Lot 53A",
-      "latitude": 40.520326222,
-      "longitude": -74.463097321,
-      "id": "123068",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "Football Before Kickoff",
-      "routeShortname": null,
-      "routeGroupId": 0
-    },
-    "ID153552": {
-      "routeId": "43991",
-      "stopId": "153552",
-      "position": "3",
-      "name": "The Bubble",
-      "latitude": 40.516396819,
-      "longitude": -74.465689823,
-      "id": "153552",
-      "userId": "1268",
-      "radius": 50,
-      "routeName": "Football Service Transition",
-      "routeShortname": null,
-      "routeGroupId": 0
-    }
+	  '10026': {
+		name: 'Henderson',
+		latitude: 40.48095,
+		longitude: -74.42872,
+		radius: 50
+	  },
+	  '10029': {
+		name: 'Livingston Student Center',
+		latitude: 40.524,
+		longitude: -74.43663,
+		radius: 50
+	  },
+	  '10034': {
+		name: 'Hill Center (NB)',
+		latitude: 40.521919278,
+		longitude: -74.463297682,
+		radius: 50
+	  },
+	  '10035': {
+		name: 'College Avenue Student Center',
+		latitude: 40.503664735,
+		longitude: -74.452402128,
+		radius: 110
+	  },
+	  '10036': {
+		name: 'College Hall',
+		latitude: 40.485509,
+		longitude: -74.437198,
+		radius: 50
+	  },
+	  '10037': {
+		name: 'Red Oak Lane',
+		latitude: 40.48298694,
+		longitude: -74.437534636,
+		radius: 50
+	  },
+	  '10038': {
+		name: 'Student Activities Center (NB)',
+		latitude: 40.503910197,
+		longitude: -74.448819271,
+		radius: 50
+	  },
+	  '10039': {
+		name: 'Allison Road Classrooms',
+		latitude: 40.52356,
+		longitude: -74.465190671,
+		radius: 90
+	  },
+	  '10041': {
+		name: 'Science Building',
+		latitude: 40.523938,
+		longitude: -74.464221,
+		radius: 50
+	  },
+	  '10042': {
+		name: 'Biel Road',
+		latitude: 40.48,
+		longitude: -74.432522,
+		radius: 50
+	  },
+	  '10052': {
+		name: 'Busch Student Center',
+		latitude: 40.523795537,
+		longitude: -74.458255043,
+		radius: 83
+	  },
+	  '10059': {
+		name: 'Lipman Hall',
+		latitude: 40.481294,
+		longitude: -74.436266,
+		radius: 50
+	  },
+	  '10060': {
+		name: 'Stadium West Lot',
+		latitude: 40.514556942,
+		longitude: -74.466148593,
+		radius: 40
+	  },
+	  '10061': {
+		name: 'Gibbons',
+		latitude: 40.48523,
+		longitude: -74.43194,
+		radius: 50
+	  },
+	  '10065': {
+		name: 'Quads',
+		latitude: 40.519863,
+		longitude: -74.433567,
+		radius: 50
+	  },
+	  '10071': {
+		name: 'Livingston Plaza',
+		latitude: 40.525106,
+		longitude: -74.438584,
+		radius: 50
+	  },
+	  '10075': {
+		name: 'SoCam Apts (SB)',
+		latitude: 40.491856,
+		longitude: -74.443093,
+		radius: 50
+	  },
+	  '10089': {
+		name: 'Werblin Recreation Center',
+		latitude: 40.518637,
+		longitude: -74.459854,
+		radius: 40
+	  },
+	  '10096': {
+		name: 'Busch-Livingston Health Center',
+		latitude: 40.523479,
+		longitude: -74.442508,
+		radius: 50
+	  },
+	  '12913': {
+		name: 'Student Activities Center (SB)',
+		latitude: 40.504248745,
+		longitude: -74.449741951,
+		radius: 40
+	  },
+	  '21050': {
+		name: 'Hill Center (SB)',
+		latitude: 40.521925185,
+		longitude: -74.463308044,
+		radius: 50
+	  },
+	  '27767': {
+		name: 'The Yard',
+		latitude: 40.49957,
+		longitude: -74.44824,
+		radius: 90
+	  },
+	  '62662': {
+		name: 'SoCam Apts (NB)',
+		latitude: 40.492293,
+		longitude: -74.44324,
+		radius: 50
+	  },
+	  '123068': {
+		name: 'Lot 53A',
+		latitude: 40.520326222,
+		longitude: -74.463097321,
+		radius: 50
+	  },
+	  '153546': {
+		name: "Jersey Mike's Arena",
+		latitude: 40.524793279,
+		longitude: -74.441031138,
+		radius: 50
+	  },
+	  '153552': {
+		name: 'The Bubble',
+		latitude: 40.516396819,
+		longitude: -74.465689823,
+		radius: 50
+	  }
   },
   "routes": {
     "4056": [
