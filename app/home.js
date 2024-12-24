@@ -49,22 +49,25 @@ const style = StyleSheet.create({
 let stops = {};
 let options = [];
 for(const key in data.stops){
-	stops[data.stops[key].name] = data.stops[key].stopId;
+	stops[data.stops[key].name] = key;
 	options.push(data.stops[key].name);
 }
 let routesInStop = {};
-for(const stop in stops) routesInStop[stops[stop]] = [];
+for(const stop in stops)
+	routesInStop[stops[stop]] = [];
 for(const key in data.routes){
 	for(let i = 3;i < data.routes[key].length; ++i){
 		if(data.routes[key][i][1] in routesInStop)
 			routesInStop[data.routes[key][i][1]].push([key, data.routes[key][i][0]]);
 	}
 }
+const track = new tracking();
 
 const BusIncoming = (props) => {
 	const actionSheetRef = useRef(null);
-	const track = new tracking();
 	const [buses, setBuses] = useState(() => []);
+	const [sheetList, setSheetList] = useState(() => []);
+	const [sheetBusPos, setSheetBusPos] = useState(0);
 	const {isDarkTheme} = props;
 	useEffect(() => {
 		const fetch = async() => {
@@ -72,19 +75,34 @@ const BusIncoming = (props) => {
 			if(props.searchStop in stops){
 				for(const route of routesInStop[stops[props.searchStop]]){
 					const ret = await track.getStop(stops[props.searchStop], route[0], route[1]);
-					for(const key in ret) tmp.push([data.routes[route[0]][0], ret[key][0].eta, data.routes[route[0]][1], ret[key][0].busName]);
+					for(const key in ret)
+						tmp.push([data.routes[route[0]][0], ret[key][0].eta, data.routes[route[0]][1], ret[key][0].busName]);
 				}
 			}
 			setBuses(tmp);
 		}
 		fetch();
 	}, [props.searchStop])
+	const busProgress = async (busId) => {
+		let [lat, lon, routeId] = await track.getBus(busId);
+		let tmp = [];
+		for(let i = 3;i < data.routes[routeId].length; ++i){
+			const stopId = data.routes[routeId][i][1];
+			tmp.push(data.stops[stopId].name)
+			//const pow2 = (num) => num*num;
+			//lat = parseFloat(lat).toFixed(14);
+			//lon = parseFloat(lon).toFixed(14);
+		}
+		setSheetList(tmp);
+		actionSheetRef.current?.show();
+		return;
+	}
 
 	const BusItem = (props) => {
 		return(
 			<>
 			<Divider />
-			<TouchableRipple onPress={() => actionSheetRef.current?.show()} rippleColor={isDarkTheme ? "#636260" : 'rgba(0, 0, 0, .12)'}>
+			<TouchableRipple onPress={() => busProgress(props.id)} rippleColor={isDarkTheme ? "#636260" : 'rgba(0, 0, 0, .12)'}>
 				<List.Item
 				title={props.line}
 				description={props.id}
@@ -101,7 +119,8 @@ const BusIncoming = (props) => {
 		<View style={style.container}>
 			<ScrollView style = {{flexGrow: 1}}>
 				{buses.map((item) => {
-					if(item[1] !== "no vehicles") return <BusItem key={item[0]} line={item[0]} color={item[2]} time={item[1]} id={item[3]}/>
+					if(item[1] !== "no vehicles")
+						return <BusItem key={item[0]} line={item[0]} color={item[2]} time={item[1]} id={item[3]}/>
 				})}
 			</ScrollView>
 		</View>
@@ -112,7 +131,7 @@ const BusIncoming = (props) => {
 		snapPoints={[80, 100]}
 		>
 			<SheetScrollView>
-				{options.map((item) => {
+				{sheetList.map((item) => {
 					return <Text key={item} style={style.dropdownItem} color={isDarkTheme ? "#FFFFFF": "#000000"}>{item}</Text>
 				})}
 			</SheetScrollView>
