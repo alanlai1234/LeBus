@@ -11,7 +11,7 @@ import data from './busInfo.json';
 const style = StyleSheet.create({
 	container:{
 		flex: 1,
-		marginTop: 0,
+		marginTop: 10,
 		paddingTop: 0
 	},
 	dropdownInput: {
